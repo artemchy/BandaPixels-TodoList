@@ -1,0 +1,44 @@
+.modal {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80%;
+  left: 5px;
+  z-index: 5;
+  padding: 10px 170px 10px 10px;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: font-weight 0.2s linear;
+
+  &:last-child {
+    margin: 0;
+  }
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+.item span {
+  font-size: 16px;
+  transition: font-weight 0.1s linear;
+}
+
+.item a {
+  &:hover {
+    font-weight: bold;
+    color: #000;
+  }
+}
+
+.item img {
+  margin-right: 10px;
+}
